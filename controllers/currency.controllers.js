@@ -4,13 +4,14 @@ const API_KEY = '398223c7f66aa86567662820'; // Replace with your actual API key
 // Controller to get exchange rates
 const getExchangeRate = async (req, res) => {
     const { base, target } = req.params;
-
+    console.log(base, target);
     if (!base || !target) {
         return res.status(400).json({ error: 'Base and target currencies are required' });
     }
 
     try {
-        const response = await axios.get(`https://v6.exchangerate-api.com/v6/${API_KEY}/enriched/${base}/${target}`);
+        const response = await axios.get(`https://v6.exchangerate-api.com/v6/${API_KEY}/latest/${base}`);
+        console.log(response.data);
         const rate = response.data.conversion_rates[target];
 
         if (!rate) {
