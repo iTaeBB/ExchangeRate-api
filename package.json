@@ -1,0 +1,25 @@
+{
+  "name": "exchangerate-api",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iTaeBB/ExchangeRate-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iTaeBB/ExchangeRate-api/issues"
+  },
+  "homepage": "https://github.com/iTaeBB/ExchangeRate-api#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2"
+  }
+}
